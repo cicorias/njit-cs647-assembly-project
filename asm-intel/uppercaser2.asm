@@ -18,6 +18,10 @@
 ;   nasm -f elf64 -F stabs -g uppercaser2.asm ; dwarf
 ; ld -o uppercaser2 uppercaser2.o
 ;   gdbtui ./uppercaser2
+
+;   nasm -f elf64 -F dwarf -g uppercaser2.asm
+; ld -o uppercaser2 uppercaser2.o
+;   gdbtui ./uppercaser2
 ;
 SECTION .bss			; Section containing uninitialized data
 

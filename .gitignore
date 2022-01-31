@@ -51,3 +51,8 @@ Module.symvers
 Mkfile.old
 dkms.conf
 hello
+c1/altprog
+c1/caeser
+c1/caeser.s
+c1/foobar.s
+asm-intel/uppercaser2
