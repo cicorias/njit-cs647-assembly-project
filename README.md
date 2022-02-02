@@ -1,3 +1,8 @@
+https://ddmedinski.wordpress.com/2015/03/04/compiled-c-code/
+
+
+
+
 # Some notes
 
 example case of input Listing 8.1: uppercaser1.asm 

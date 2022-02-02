@@ -1,7 +1,8 @@
 TARGET = caeser
 LIBS = -lm
 CC = gcc
-CFLAGS = -g -Wall -O0
+CFLAGS = -O0
+OLDCFLAGS = -g -Wall -O0
 
 .PHONY: default all clean
 
