@@ -1,5 +1,13 @@
 https://ddmedinski.wordpress.com/2015/03/04/compiled-c-code/
 
+
+on x86_64
+```
+ as --32 -o hello.o hello.S
+ ld -m elf_i386 hello.o -o a
+```
+
+
 ```
 as --32
 ld -m elf_i386
