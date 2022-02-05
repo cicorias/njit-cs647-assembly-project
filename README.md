@@ -1,7 +1,15 @@
 https://ddmedinski.wordpress.com/2015/03/04/compiled-c-code/
 
+```
+as --32
+ld -m elf_i386
+```
 
+You don't have to use as and ld just because you're working with assembly code. gcc can be used, and in that case you would use -m32.
 
+```
+gcc -m32 -nostdlib myprog.s -o myprog
+```
 
 # Some notes
 
