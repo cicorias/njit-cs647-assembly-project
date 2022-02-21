@@ -1,0 +1,50 @@
+// otes
+
+// ./retAddr3 $(perl -e 'print "A"x49')
+
+//./retAddr3 $(perl -e 'print "A"x50') 
+
+
+//This program is extremely similar to retAddr2.
+
+//You do not have the full source code for this one but there is a function which seems to be insecure and it looks like this:
+
+// return address; 0x080487da -- needs to be  0x08048805 / 0x08048805 or 0x08048802
+
+
+	void function (char a, char b, char c, char * input)
+	{
+		int x = 10;
+		short y = 24;
+		char buffer[20] = {'\0'};
+		char buffer2[16] = {'\0'};
+		char buffer3[8] = {'\0'};
+
+		strcpy(buffer2, input);
+	}
+
+
+//Below you can see most of the source code for the main function. If you can manage to get the program to print "::: You Win :::", you will also get the password to the next level.
+
+	void main(int argc, char* argv[]) {
+		int x;
+
+		x = 0;
+		function(1,2,3,argv[1]);
+		x = 1;
+
+		if (x == 0)
+			printf("::: You lose :::\n");
+		else if (x == 2){
+			printf("::: You Win :::\n");
+			//levelTwo()??
+		}
+		else
+			printf("::: You lose :::\n");
+	}
+
+
+//I hope that helps! Good luck!
+
+
+//- heisenburg
