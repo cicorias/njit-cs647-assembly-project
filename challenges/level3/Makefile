@@ -1,6 +1,6 @@
-SOURCES=main.s
-OBJECTS=main.o
-PRODUCT=main
+SOURCES=execve.s
+OBJECTS=execve.o
+PRODUCT=execve
 
 uname_m := $(shell uname -m)
 $(info uname_m=$(uname_m))
