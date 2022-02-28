@@ -56,3 +56,7 @@ c1/caeser
 c1/caeser.s
 c1/foobar.s
 asm-intel/uppercaser2
+challenges/kbcheck2/p1/main
+challenges/kbcheck2/p2/main
+.gitignore
+challenges/kbcheck2/p3/main
