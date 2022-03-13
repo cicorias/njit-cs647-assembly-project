@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 void vulnFunction(char *input) {
 	char buffer[16] = {'\0'};
@@ -12,6 +13,9 @@ void vulnFunction(char *input) {
 }
 
 int main(int argc, char *argv[]) {
+	
+	if (!(setreuid(0, 0)==0)) 	//Get studentroot(owner) priviledges
+		printf("\nSetuid failed.\n");
 
 	vulnFunction(argv[1]);
 }
