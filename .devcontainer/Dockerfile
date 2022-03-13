@@ -8,4 +8,11 @@ FROM mcr.microsoft.com/vscode/devcontainers/universal:1-focal
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 #
-# USER codespace
+
+# ADD toggleASLR /bin/toggleASLR
+# RUN chown root:root /bin/toggleASLR \
+#     & chmod 755 /bin/toggleASLR
+
+# RUN chmod u+s /bin/toggleASLR
+
+USER codespace
