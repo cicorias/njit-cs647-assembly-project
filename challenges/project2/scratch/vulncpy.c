@@ -36,6 +36,8 @@ void vulnFileCopy(char *fileName)
         data[i] = 'A';
         i++;
     }
+    printf("\nAddress of data buffer: %p\n", &data);
+    printf("address of function exit() is :%p\n", exit);
     i = 0;
     printf("\nFile to copy: ");
     printf(fileName);
