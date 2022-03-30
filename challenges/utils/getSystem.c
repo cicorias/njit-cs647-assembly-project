@@ -6,11 +6,13 @@
 // -ldl -- link to libdl.so
 
 int main(int argc, char *argv[]) {
-    void *h, *p;
+    void *h, *ps, *pe;
     h = dlopen(NULL, RTLD_LAZY);
-    p = dlsym(h, "system");
-    printf("Address of 'system': 0x%08x\n", p);
-    p = dlsym(h, "exit");
-    printf("Address of 'exit':   0x%08x\n", p);
+    ps = dlsym(h, "system");
+    printf("Address of 'system': 0x%08x\n", ps);
+    pe = dlsym(h, "exit");
+    printf("Address of 'exit':   0x%08x\n", pe);
+    printf("Offset system-exit:  0x%08x\n", ps - pe );
+
     return 0;
 }

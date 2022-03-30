@@ -68,3 +68,5 @@ Desktop647/BufferOverflowPrograms/Module5/helloVuln3/helloVuln3
 Desktop647/BufferOverflowPrograms/Module5/helloVuln4/helloVuln4
 Desktop647/BufferOverflowPrograms/Module5/helloVuln4/hidden-root.txt
 challenges/project2/scratch/vulncpy
+challenges/utils/getEnvAddr
+challenges/utils/getSystem
