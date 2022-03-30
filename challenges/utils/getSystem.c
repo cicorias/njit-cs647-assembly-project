@@ -9,8 +9,8 @@ int main(int argc, char *argv[]) {
     void *h, *ps, *pe;
     h = dlopen(NULL, RTLD_LAZY);
     ps = dlsym(h, "system");
-    printf("Address of 'system': 0x%08x\n", ps);
     pe = dlsym(h, "exit");
+    printf("Address of 'system': 0x%08x\n", ps);
     printf("Address of 'exit':   0x%08x\n", pe);
     printf("Offset system-exit:  0x%08x\n", ps - pe );
 

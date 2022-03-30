@@ -15,7 +15,7 @@ GCCFLAGS+=-g -z execstack -fno-stack-protector $(GCCFLAGS.$(uname_m))
 all: $(PRODUCT)
 
 $(PRODUCT) : $(SOURCES)
-	gcc $(GCCFLAGS) -o $(PRODUCT) $(SOURCES)
+	gcc $(GCCFLAGS) -o $(PRODUCT) $(SOURCES) -ldl
 
 clean:
 	rm -f $(PRODUCT) $(OBJECTS)
