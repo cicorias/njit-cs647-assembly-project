@@ -9,7 +9,7 @@
 // compile with: (x64)  gcc -o getSystem getSystem.c -ldl
 // compile with: (i386) gcc -m32 -o getSystem getSystem.c -ldl
 // -ldl -- link to libdl.so
-#define SIZE 200
+// #define SIZE 200
 void vulnFileCopy(char *userName);
 void usage();
 void getSystem();
@@ -32,19 +32,19 @@ void main(int argc, char *argv[])
 }
 void vulnFileCopy(char *fileName)
 {
-    char data[SIZE];
-    unsigned int i;
+    char data[200];
+    unsigned int i = 34; //0x22
     FILE *fp;
-    unsigned int size;
+    unsigned int size = 51; //0x33
     // Initialize data to help vizualize stack contents
     i = 0;
-    while (i < SIZE)
+    while (i < 200)
     {
         data[i] = 'A';
         i++;
     }
     printf("\nAddress of data buffer: %p\n", &data);
-    getSystem();
+    //getSystem();
     i = 0;
     printf("\nFile to copy: ");
     printf(fileName);

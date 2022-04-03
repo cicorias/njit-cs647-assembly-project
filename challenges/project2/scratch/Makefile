@@ -10,7 +10,8 @@ GCCFLAGS.i686=
 GCCFLAGS.x86_64=-m32
 
 # set for run
-GCCFLAGS+=-g -z execstack -fno-stack-protector $(GCCFLAGS.$(uname_m))
+# GCCFLAGS+=-g -z execstack -fno-stack-protector $(GCCFLAGS.$(uname_m))
+GCCFLAGS+=-g $(GCCFLAGS.$(uname_m))
 
 all: $(PRODUCT)
 
